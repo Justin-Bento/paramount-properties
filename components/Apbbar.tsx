@@ -40,15 +40,12 @@ export default function Apbbar() {
               ))}
             </nav>
             <div className="items-center justify-end hidden md:flex md:flex-1 lg:w-0">
-              <a href="#" className="text-base font-medium text-gray-500 whitespace-nowrap hover:text-gray-900">
-                Sign in
-              </a>
-              <a
-                href="#"
+              <Link
+                href="/contact"
                 className="inline-flex items-center justify-center px-4 py-2 ml-8 text-base font-medium text-white border border-transparent rounded-md shadow-sm bg-primary-600 whitespace-nowrap hover:bg-primary-700"
               >
-                Sign up
-              </a>
+                Send Us A Message
+              </Link>
             </div>
           </div>
         </div>
@@ -66,11 +63,7 @@ export default function Apbbar() {
             <div className="overflow-hidden bg-white rounded-lg shadow-md ring-1 ring-black ring-opacity-5">
               <div className="flex items-center justify-between px-5 pt-4">
                 <div>
-                  <img
-                    className="w-auto h-8"
-                    src="https://tailwindui.com/img/logos/mark.svg?color=primary&shade=600"
-                    alt=""
-                  />
+                <Logo />
                 </div>
                 <div className="-mr-2">
                   <Popover.Button className="inline-flex items-center justify-center p-2 text-gray-400 bg-white rounded-md hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-inset focus:ring-primary-600">
@@ -92,20 +85,7 @@ export default function Apbbar() {
                   ))}
                 </div>
                 <div className="px-5 mt-6">
-                  <a
-                    href="#"
-                    className="block w-full px-4 py-3 font-medium text-center text-white rounded-md shadow bg-primary-600 hover:bg-primary-700"
-                  >
-                    Sign up
-                  </a>
-                </div>
-                <div className="px-5 mt-6">
-                  <p className="text-base font-medium text-center text-gray-500">
-                    Existing customer?{' '}
-                    <a href="#" className="text-gray-900 hover:underline">
-                      Sign in
-                    </a>
-                  </p>
+                  <Link href="/contact" className="block w-full px-4 py-3 font-medium text-center text-white rounded-md shadow bg-primary-600 hover:bg-primary-700">Send Us A Message</Link>
                 </div>
               </div>
             </div>

@@ -1,4 +1,6 @@
 import Head from "next/head";
+import Image from "next/image";
+import Link from "next/link";
 import { HiOutlineSparkles } from "react-icons/hi";
 export default function index() {
   return (
@@ -41,7 +43,7 @@ function Hero() {
   return (
     <section className="mx-auto wrapper">
       <div className="grid grid-cols-1 gap-8 md:grid-cols-2">
-        <div className="bg-gray-200 w-full h-[250px] md:h-[500px] rounded-xl hidden lg:block"></div>
+        <Image width={800} height={800} src="/media/pexels-max-vakhtbovych-7534176.jpg" alt="company Building" className="hidden rounded-xl lg:block" />
         <div className="flex flex-col items-center md:place-content-center">
           <span className="inline-flex items-center rounded-full bg-gray-100 px-3 py-0.5 text-sm font-medium text-gray-800">
             Badge
@@ -56,35 +58,25 @@ function Hero() {
             investment
           </p>
           <div className="flex flex-col w-full gap-4 mt-8 md:flex-row">
-            <button
-              type="button"
-              className="inline-flex items-center px-4 py-2 text-sm font-medium text-white border border-transparent rounded-md shadow-sm bg-primary-600 hover:bg-primary-700 focus:outline-none focus:ring-2 focus:ring-primary-500 focus:ring-offset-2"
-            >
-              Button text
-            </button>
-            <button
-              type="button"
-              className="inline-flex items-center px-4 py-2 text-sm font-medium text-gray-700 bg-white border border-gray-300 rounded-md shadow-sm hover:bg-gray-50 focus:outline-none focus:ring-2 focus:ring-primary-500 focus:ring-offset-2"
-            >
-              Button text
-            </button>
+            <Link href="/buildings" className="inline-flex items-center px-4 py-2 text-sm font-medium text-white border border-transparent rounded-md shadow-sm bg-primary-800 hover:bg-primary-700 focus:outline-none focus:ring-2 focus:ring-primary-500 focus:ring-offset-2">View Properties</Link>
+            <Link href="/blog" className="inline-flex items-center px-4 py-2 text-sm font-medium text-gray-700 bg-white border border-gray-300 rounded-md shadow-sm hover:bg-gray-50 focus:outline-none focus:ring-2 focus:ring-primary-500 focus:ring-offset-2">Market Resources</Link>
           </div>
         </div>
-        <div className="bg-gray-200 w-full h-[250px] md:h-[500px] rounded-xl block lg:hidden"></div>
+        <Image width={800} height={800} src="/media/pexels-max-vakhtbovych-7534176.jpg" alt="company Building" className="block rounded-xl lg:hidden" />
       </div>
       <div className="grid grid-cols-1 mt-16 gap-y-10 gap-x-8 lg:grid-cols-3">
-            {incentives.map((incentive) => (
-              <div key={incentive.name} className="sm:flex lg:block">
-                <div className="sm:flex-shrink-0">
-                  <img className="w-16 h-16" src={incentive.imageSrc} alt="" />
-                </div>
-                <div className="mt-4 sm:mt-0 sm:ml-6 lg:mt-6 lg:ml-0">
-                  <h3 className="text-sm font-medium text-gray-900">{incentive.name}</h3>
-                  <p className="mt-2 text-sm text-gray-500">{incentive.description}</p>
-                </div>
-              </div>
-            ))}
+        {incentives.map((incentive) => (
+          <div key={incentive.name} className="sm:flex lg:block">
+            <div className="sm:flex-shrink-0">
+              <Image width={48} height={48} src={incentive.imageSrc} alt="" />
+            </div>
+            <div className="mt-4 sm:mt-0 sm:ml-6 lg:mt-6 lg:ml-0">
+              <h3 className="text-sm font-medium text-gray-900">{incentive.name}</h3>
+              <p className="mt-2 text-sm text-gray-500">{incentive.description}</p>
+            </div>
           </div>
+        ))}
+      </div>
     </section>
   );
 }
@@ -207,46 +199,50 @@ function SecondaryFeatures() {
 }
 function ProductSample() {
   return (
-      <div className="wrapper">
-        {/* Details section */}
-        <section aria-labelledby="details-heading">
-          <div className="flex flex-col items-start">
-            <h2 id="details-heading" className="headline-large">The Fine Details</h2>
-            <p className="max-w-3xl mt-2 body-large">
-              Our patented padded snack sleeve construction protects your favorite treats from getting smooshed during
-              all-day adventures, long shifts at work, and tough travel schedules.
+    <div className="wrapper">
+      {/* Details section */}
+      <section aria-labelledby="details-heading">
+        <div className="flex flex-col items-start">
+          <h2 id="details-heading" className="headline-large">The Fine Details</h2>
+          <p className="max-w-3xl mt-2 body-large">
+            Our patented padded snack sleeve construction protects your favorite treats from getting smooshed during
+            all-day adventures, long shifts at work, and tough travel schedules.
+          </p>
+        </div>
+
+        <div className="grid grid-cols-1 mt-16 gap-y-16 lg:grid-cols-2 lg:gap-x-8">
+          <div>
+            <div className="w-full overflow-hidden rounded-lg aspect-w-3 aspect-h-2">
+              <Image
+                width={592}
+                height={400}
+                src="https://tailwindui.com/img/ecommerce-images/product-page-04-detail-product-shot-01.jpg"
+                alt="Drawstring top with elastic loop closure and textured interior padding."
+                className="object-cover object-center w-full h-full"
+              />
+            </div>
+            <p className="mt-8 text-base text-gray-500">
+              The 20L model has enough space for 370 candy bars, 6 cylinders of chips, 1220 standard gumballs, or any
+              combination of on-the-go treats that your heart desires. Yes, we did the math.
             </p>
           </div>
-
-          <div className="grid grid-cols-1 mt-16 gap-y-16 lg:grid-cols-2 lg:gap-x-8">
-            <div>
-              <div className="w-full overflow-hidden rounded-lg aspect-w-3 aspect-h-2">
-                <img
-                  src="https://tailwindui.com/img/ecommerce-images/product-page-04-detail-product-shot-01.jpg"
-                  alt="Drawstring top with elastic loop closure and textured interior padding."
-                  className="object-cover object-center w-full h-full"
-                />
-              </div>
-              <p className="mt-8 text-base text-gray-500">
-                The 20L model has enough space for 370 candy bars, 6 cylinders of chips, 1220 standard gumballs, or any
-                combination of on-the-go treats that your heart desires. Yes, we did the math.
-              </p>
+          <div>
+            <div className="w-full overflow-hidden rounded-lg aspect-w-3 aspect-h-2">
+              <Image
+                width={592}
+                height={400}
+                src="https://tailwindui.com/img/ecommerce-images/product-page-04-detail-product-shot-02.jpg"
+                alt="Front zipper pouch with included key ring."
+                className="object-cover object-center w-full h-full"
+              />
             </div>
-            <div>
-              <div className="w-full overflow-hidden rounded-lg aspect-w-3 aspect-h-2">
-                <img
-                  src="https://tailwindui.com/img/ecommerce-images/product-page-04-detail-product-shot-02.jpg"
-                  alt="Front zipper pouch with included key ring."
-                  className="object-cover object-center w-full h-full"
-                />
-              </div>
-              <p className="mt-8 text-base text-gray-500">
-                Up your snack organization game with multiple compartment options. The quick-access stash pouch is ready
-                for even the most unexpected snack attacks and sharing needs.
-              </p>
-            </div>
+            <p className="mt-8 text-base text-gray-500">
+              Up your snack organization game with multiple compartment options. The quick-access stash pouch is ready
+              for even the most unexpected snack attacks and sharing needs.
+            </p>
           </div>
-        </section>
+        </div>
+      </section>
     </div>
   )
 }
@@ -310,7 +306,9 @@ function Testimonials() {
         </svg>
 
         <div className="relative">
-          <img
+          <Image
+            width={32}
+            height={32}
             className="h-8 mx-auto"
             src="https://tailwindui.com/img/logos/workcation-logo-indigo-600-mark-gray-800-and-indigo-600-text.svg"
             alt="Workcation"
@@ -325,8 +323,10 @@ function Testimonials() {
             <footer className="mt-8">
               <div className="md:flex md:items-center md:justify-center">
                 <div className="md:flex-shrink-0">
-                  <img
-                    className="w-10 h-10 mx-auto rounded-full"
+                  <Image
+                    width={40}
+                    height={40}
+                    className="mx-auto rounded-full"
                     src="https://images.unsplash.com/photo-1494790108377-be9c29b29330?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=2&w=256&h=256&q=80"
                     alt=""
                   />
