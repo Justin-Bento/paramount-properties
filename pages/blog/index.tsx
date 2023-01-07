@@ -1,4 +1,5 @@
 import Head from "next/head";
+import Image from "next/image";
 import Link from "next/link";
 
 export default function Blog() {
@@ -26,12 +27,12 @@ function Card() {
     <div className="flex justify-center">
       <div className="max-w-sm bg-white border rounded-lg">
         <Link href="/blog/slug">
-          <img className="rounded-t-lg" src="https://mdbootstrap.com/img/new/standard/nature/184.jpg" alt="" />
+          <Image width={400} height={380} className="rounded-t-lg" src="" alt="" />
         </Link>
         <div className="p-6">
           <h5 className="mb-2 text-gray-900 headline-small">Card title</h5>
           <p className="mb-4 text-gray-700 body-large">
-            Some quick example text to build on the card title and make up the bulk of the card's
+            Some quick example text to build on the card title and make up the bulk of the card&#39;s
             content.
           </p>
           <Link href="/blog/slug" className="inline-flex items-center rounded border border-transparent bg-indigo-100 px-2.5 py-1.5 text-xs font-medium text-indigo-700 hover:bg-indigo-200 focus:outline-none focus:ring-2 focus:ring-indigo-500 focus:ring-offset-2">Button</Link>
