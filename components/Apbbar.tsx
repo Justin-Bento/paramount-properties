@@ -3,12 +3,13 @@ import { Popover, Transition } from '@headlessui/react'
 import { HiMenu, HiX } from "react-icons/hi"
 import Image from 'next/image'
 import Logo from './Logo'
+import Link from 'next/link'
 
 
 const navigation = [
   { name: 'Home', href: '/' },
   { name: 'About', href: '/about' },
-  { name: 'Properties', href: '/properties' },
+  { name: 'Buildings', href: '/buildings' },
   { name: 'Blog', href: '/blog' },
   { name: 'Contact', href: '/contact' },
 ]
@@ -20,10 +21,10 @@ export default function Apbbar() {
         <div className="px-6 mx-auto max-w-7xl lg:px-8">
           <div className="flex items-center justify-between py-6 border-b-2 border-gray-100 md:justify-start md:space-x-10">
             <div className="flex justify-start lg:w-0 lg:flex-1">
-              <a href="#">
+              <Link href="/">
                 <span className="sr-only">Your Company</span>
                 <Logo />
-              </a>
+              </Link>
             </div>
             <div className="-my-2 -mr-2 md:hidden">
               <Popover.Button className="inline-flex items-center justify-center p-2 text-gray-400 bg-white rounded-md hover:bg-gray-100 hover:text-gray-500 focus:outline-none focus:ring-2 focus:ring-inset focus:ring-primary-500">
