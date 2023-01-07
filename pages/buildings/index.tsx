@@ -1,6 +1,7 @@
 import Head from "next/head"
 import PropertyCard from "../../components/PropertyCard"
 import Tabs from "../../components/Tabs"
+
 export default function index() {
   return (
     <>
@@ -14,14 +15,19 @@ export default function index() {
         </section>
         <Tabs />
         <section className="mt-8 space-y-8">
-          <PropertyCard />
-          <PropertyCard />
-          <PropertyCard />
-          <PropertyCard />
+          {properties.map((data) => {
+            return <PropertyCard key={data.id} Headline={data.title} Path={data.link} Meida={data.image} />
+          })}
+          
         </section>
       </main>
     </>
   )
 }
 
-
+let properties = [
+  {id: 1, title: "Sunset Point", link: "/renting/slug", image: "/media/properties/pexels-alex-staudinger-1732414.jpg"},
+  {id: 2, title: "Sunset Point", link: "/renting/slug", image: "/media/properties/pexels-jonathan-borba-3217505.jpg"},
+  {id: 3, title: "Sunset Point", link: "/renting/slug", image: "/media/properties/pexels-muffin-creatives-2468773.jpg"},
+  {id: 4, title: "Sunset Point", link: "/renting/slug", image: "/media/properties/pexels-taras-makarenko-593171.jpg"}
+]
