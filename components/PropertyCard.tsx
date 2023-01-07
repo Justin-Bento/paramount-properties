@@ -1,11 +1,21 @@
-export default function PropertyCard() {
+import Image from "next/image"
+import Link from "next/link"
+
+interface PropertyCardProps {
+  Meida: string,
+  Headline: string,
+  Path: string
+}
+export default function PropertyCard(props: PropertyCardProps) {
   return (
-    <>
+    <Link href={`/buildings/${props.Path}`}>
       <div className="relative">
         <div className="relative px-8 py-24 overflow-hidden bg-primary-500 rounded-xl lg:grid lg:grid-cols-2 lg:gap-x-8 lg:px-16">
           <div className="absolute inset-0 opacity-50 mix-blend-multiply saturate-0 filter">
-            <img
-              src="https://images.unsplash.com/photo-1601381718415-a05fb0a261f3?ixid=MXwxMjA3fDB8MHxwcm9maWxlLXBhZ2V8ODl8fHxlbnwwfHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1216&q=80"
+            <Image
+              src={props.Meida}
+              width={1200}
+              height={360}
               alt=""
               className="object-cover w-full h-full"
             />
@@ -23,6 +33,6 @@ export default function PropertyCard() {
           </div>
         </div>
       </div>
-    </>
+    </Link>
   )
 }
