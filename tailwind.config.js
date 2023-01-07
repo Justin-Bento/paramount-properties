@@ -39,7 +39,7 @@ module.exports = {
 
       }),
       fontFamily: {
-        sans: ['Commissioner', ...defaultTheme.fontFamily.sans],
+        sans: ['Chivo', ...defaultTheme.fontFamily.sans],
       },
     },
   },
