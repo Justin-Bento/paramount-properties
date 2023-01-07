@@ -18,6 +18,11 @@
   src: url('/fonts/Chivo-Italic-VariableFont_wght.ttf') format('truetype');
 }
 @tailwind base;
+@layer base {
+  html,body {
+    @apply bg-gray-50
+  }
+}
 @tailwind components;
 @layer components {
   .wrapper {
