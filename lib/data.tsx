@@ -89,4 +89,51 @@ const properties = [
   {id: 3, title: "Sunset Point", link: "/slug", image: "/media/properties/pexels-muffin-creatives-2468773.jpg"},
   {id: 4, title: "Sunset Point", link: "/slug", image: "/media/properties/pexels-taras-makarenko-593171.jpg"}
 ]
-export  {product, properties, pages ,incentives}
+let secondary_features = [
+  {
+    id: 1,
+    title: "Know The Client Personal",
+    body: "Researching and evaluating properties to identify potential investments",
+  },
+  {
+    id: 2,
+    title: "Undedrstand Your Needs & Goals",
+    body: "Negotiating contracts and leases with tenants and landlords",
+  },
+  {
+    id: 3,
+    title: "Research the local real estate market",
+    body: "Ensuring compliance with applicable laws and regulations",
+  },
+  {
+    id: 4,
+    title: "Find properties to invest in",
+    body: "Developing and implementing strategies to maximize the value of the company’s real estate holdings.",
+  },
+  {
+    id: 5,
+    title: "Analyze the financial feasibility",
+    body: "Monitoring the performance of the company’s real estate holdings",
+  },
+  {
+    id: 6,
+    title: "Secure financing",
+    body: "Maintaining relationships with tenants, landlords, and other stakeholders.",
+  },
+  {
+    id: 7,
+    title: "Manage the property",
+    body: "Managing budgets and financial plans for the company’s real estate portfolio.",
+  },
+  {
+    id: 8,
+    title: "Market and lease the property",
+    body: "Providing regular reports to senior management on the performance.",
+  },
+  {
+    id: 9,
+    title: "Maximize the return on investment",
+    body: "Develop and manage budgets and financial plans for the company’s real estate holdings.",
+  },
+];
+export  {product, properties, pages ,incentives, secondary_features}
