@@ -10,7 +10,8 @@ const nextConfig = {
     domains: [  
       'cdn.sanity.io', 
       'images.unsplash.com',
-      "tailwindui.com"
+      "tailwindui.com",
+      "a0.muscache.com"
     ],
   },
 }
