@@ -7,7 +7,7 @@ export default function index() {
   return (
     <>
       <Head>
-        <title>Paramount Properties - Buildings</title>
+        <title>Buildings - Paramount Properties</title>
       </Head>
       <main className="my-16 wrapper">
         <section className="mb-8">
