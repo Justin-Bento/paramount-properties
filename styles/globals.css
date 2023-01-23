@@ -29,13 +29,13 @@
     @apply p-4 mx-auto max-w-7xl sm:px-6 lg:px-8;
   }
   .display-large {
-    @apply text-[57px] capitalize leading-[64px] text-gray-700 font-bold;
+    @apply text-[57px] capitalize leading-[64px] text-gray-700 font-normal;
   }
   .display-medium {
-    @apply text-[45px] capitalize leading-[52px] text-gray-700 font-bold;
+    @apply text-[45px] capitalize leading-[52px] text-gray-700 font-normal;
   }
   .display-small {
-    @apply text-[36px] capitalize leading-[44px] text-gray-700 font-bold;
+    @apply text-[36px] capitalize leading-[44px] text-gray-700 font-normal;
   }
   .headline-large {
     @apply text-[32px] leading-[40px] text-gray-700 capitalize font-bold;
