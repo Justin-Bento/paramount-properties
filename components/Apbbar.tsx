@@ -1,7 +1,6 @@
 import { Fragment } from 'react'
 import { Popover, Transition } from '@headlessui/react'
 import { HiMenu, HiX } from "react-icons/hi"
-import Image from 'next/image'
 import Logo from './Logo'
 import Link from 'next/link'
 
@@ -39,14 +38,6 @@ export default function Apbbar() {
                 </a>
               ))}
             </nav>
-            <div className="items-center justify-end hidden md:flex md:flex-1 lg:w-0">
-              <Link
-                href="/contact"
-                className="inline-flex items-center justify-center px-4 py-2 ml-8 text-base font-medium text-white border border-transparent rounded-md shadow-sm bg-primary-600 whitespace-nowrap hover:bg-primary-700"
-              >
-                Send Us A Message
-              </Link>
-            </div>
           </div>
         </div>
 
