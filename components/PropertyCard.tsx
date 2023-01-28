@@ -1,24 +1,30 @@
-import Image from "next/image"
-import Link from "next/link"
+import Image from "next/image";
+import Link from "next/link";
+import { FaLink } from "react-icons/fa";
 
 interface PropertyCardProps {
-  Meida: string,
-  Headline: string,
-  Path: string
+  Meida: string;
+  Headline: string;
+  Path: string;
 }
 export default function PropertyCard(props: PropertyCardProps) {
   return (
-    <Link href={`/buildings/${props.Path}`}>
-      <div className="transition-all bg-primary-500 rounded-xl hover:bg-gray-500/80">
-        <div className="relative w-full h-64 rounded-xl ">
-          <div className="absolute inset-0 opacity-50 mix-blend-multiply saturate-0 filter">
-            <Image fill src={props.Meida} alt={`Image of ${props.Headline}`} className="object-cover rounded-xl" />
-          </div>
-          <div className="absolute bottom-0 left-0 p-6">
-            <h2 className="text-white title-large">{props.Headline}</h2>
-          </div>
-        </div>
+    <Link
+      href={`/buildings/${props.Path}`}
+      className="overflow-hidden transition-all bg-white divide-y divide-gray-200 rounded-lg shadow hover:opacity-90 hover:cursor-pointer"
+    >
+      <div className="flex flex-row items-center justify-between px-4 py-5 sm:px-6">
+        <h5 className="title-medium">{props.Headline}</h5>
+        <FaLink className="w-4 h-4 text-gray-500" />
+      </div>
+      <div className="relative w-full h-64">
+        <Image
+          fill
+          src={props.Meida}
+          alt={`Image of ${props.Headline}`}
+          className="object-cover"
+        />
       </div>
     </Link>
-  )
+  );
 }
