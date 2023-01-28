@@ -1,167 +1,153 @@
 import Head from "next/head";
 import Image from "next/image";
 import Link from "next/link";
-import { HiOutlineCalendar, } from "react-icons/hi"
-
+import { FaLink } from "react-icons/fa"
 export default function index() {
   return (
     <>
       <Head>
         <title>Paramount Properties LTD</title>
       </Head>
-      <main className="space-y-16 lg:mt-16">
-        <Section_1 />
-        <Section_2 />
-        <Section_3 />
-        <Section_4 />
-        <Section_5 />
-        <Section_6 />
-      </main>
-    </>
-  )
-}
-
-function Section_1() {
-  return (
-    <>
-      <section className="wrapper">
-        <div className="flex flex-col items-start justify-center mx-auto text-center lg:items-center">
-          <h1 className="display-medium w-full lg:max-w-[30ch] leading-normal"> Discover Real Estate Investment Opportunities with Us!</h1>
-          <p className="w-full mt-4 prose lg:max-w-3xl">We offer comprehensive services, including market analysis, property evaluation, financing options, and tenant management, to ensure that you maximize your return on investment. With our expertise in the real estate market, we can help you identify the hidden gems that will yield the highest returns and provide you with long-term stability.</p>
-          <div className="mt-4 space-x-4">
-            <Link href="/contact" className="inline-flex items-center px-4 py-2 text-sm font-medium text-white border border-transparent rounded-md shadow-sm bg-primary-600 hover:bg-primary-700 focus:outline-none focus:ring-2 focus:ring-primary-500 focus:ring-offset-2">
-              Send Us A Message
+      <main className="space-y-8 lg:my-16 lg:space-y-16">
+        <section className="p-4 mx-auto max-w-7xl sm:px-6 lg:px-8">
+          <div className="overflow-hidden text-start lg:text-center">
+            <div className="">
+              <h1 className="font-bold display-medium lg:max-w-4xl lg:mx-auto">New Commercial Property Acquired: Exciting Opportunities for Businesses</h1>
+            </div>
+            <div className="lg:p-4">
+              <p className="prose lg:mx-auto">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Sunt laudantium at sit voluptatibus quisquam saepe illum commodi, adipisci dolore autem ratione dolorum amet quis distinctio dolor fugit ipsam nostrum officiis!</p>
+              <div className="flex flex-col justify-start gap-4 mt-8 md:flex-row md:justify-center">
+                <button type="button" className="inline-flex items-center px-4 py-2 text-sm font-medium text-white border border-transparent rounded-md shadow-sm bg-primary-600 hover:bg-primary-700 focus:outline-none focus:ring-2 focus:ring-primary-500 focus:ring-offset-2" > Get Started Today </button>
+                <button type="button" className="inline-flex items-center px-4 py-2 text-sm font-medium text-gray-700 bg-white border border-gray-300 rounded-md shadow-sm hover:bg-gray-50 focus:outline-none focus:ring-2 focus:ring-primary-500 focus:ring-offset-2" >Learn More About Us</button>
+              </div>
+              {/* END Section 01: Secondary Info */}
+              <div className="relative w-full h-[480px] lg:h-[640px] mt-8 rounded-xl">
+                <Image fill quality={40} src="/media/hero-img.webp" alt="" className="object-cover w-full h-full rounded-xl" />
+              </div>
+            </div>
+          </div>
+          {/* END: Hero Section */}
+          <div className="flex flex-col gap-8 p-4 mt-8 lg:flex-row">
+            <div className="w-full h-56 overflow-hidden bg-white rounded-lg shadow">
+              <div className="px-4 py-5 sm:p-6">{/* Content goes here */}</div>
+            </div>
+            {/* End of information herers */}
+            <div className="w-full h-56 overflow-hidden bg-white rounded-lg shadow">
+              <div className="px-4 py-5 sm:p-6">{/* Content goes here */}</div>
+            </div>
+            {/* End of information herers */}
+            <div className="w-full h-56 overflow-hidden bg-white rounded-lg shadow">
+              <div className="px-4 py-5 sm:p-6">{/* Content goes here */}</div>
+            </div>
+            {/* End of information herers */}
+            <div className="w-full h-56 overflow-hidden bg-white rounded-lg shadow">
+              <div className="px-4 py-5 sm:p-6">{/* Content goes here */}</div>
+            </div>
+            {/* End of information herers */}
+          </div>
+        </section>
+        {/* END: Section 01 */}
+        <section className="p-4 mx-auto max-w-7xl sm:px-6 lg:px-8">
+          <div className="p-8 overflow-hidden rounded-lg bg-primary-600">
+            <div className="px-4 py-2 text-start lg:text-center">
+              <h2 className="font-bold headline-large text-gray-50">Real Estate Portfolio Management Simplified</h2>
+            </div>
+            <div className="px-4 text-start lg:text-center">
+              <p className="prose text-gray-200 lg:mx-auto ">Specialize In Helping Investors From Around The World Invest In The Vibrant And Growing Real Estate Market In Antigua.</p>
+            </div>
+          </div>
+        </section>
+        {/* END: Section 02 */}
+        <section className="p-4 mx-auto space-y-8 max-w-7xl sm:px-6 lg:px-8 lg:space-y-16">
+          <div className="grid items-start grid-cols-1 gap-8 md:grid-cols-2 lg:items-center">
+            <div className="">
+              <h3 className="font-bold headline-large">Real Estate Investing: Residential & Commercial</h3>
+              <p className="mt-2 prose">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Sunt laudantium at sit voluptatibus quisquam saepe illum commodi, adipisci dolore autem ratione dolorum amet quis distinctio dolor fugit ipsam nostrum officiis!</p>
+            </div>
+            <div className="overflow-hidden bg-white rounded-lg shadow h-96">
+              <div className="px-4 py-5 sm:p-6">{/* Content goes here */}</div>
+            </div>
+          </div>
+          <div className="grid items-start grid-cols-1 gap-8 md:grid-cols-2 lg:items-center">
+            <div className="overflow-hidden bg-white rounded-lg shadow h-96">
+              <div className="px-4 py-5 sm:p-6">{/* Content goes here */}</div>
+            </div>
+            <div className="">
+              <h3 className="font-bold headline-medium">Real Estate Investing: Residential & Commercial</h3>
+              <p className="mt-2 prose">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Sunt laudantium at sit voluptatibus quisquam saepe illum commodi, adipisci dolore autem ratione dolorum amet quis distinctio dolor fugit ipsam nostrum officiis!</p>
+            </div>
+          </div>
+        </section>
+        {/* END: Section 03 */}
+        <section className="p-4 mx-auto max-w-7xl sm:px-6 lg:px-8">
+          <div className="flex flex-col gap-8 p-6 overflow-hidden bg-white shadow sm:rounded-lg lg:flex-row lg:gap-6">
+            <div className="">
+              <h4 className="max-w-3xl font-bold headline-medium">Why Choose Us & Profit from Real Estate: Develop & Manage Holdings</h4>
+            </div>
+            <div className="grid w-full grid-cols-1 gap-8 md:grid-cols-2">
+              <div className="w-full h-48 border rounded-xl">1</div>
+              <div className="w-full h-48 border rounded-xl">1</div>
+              <div className="w-full h-48 border rounded-xl">1</div>
+              <div className="w-full h-48 border rounded-xl">1</div>
+            </div>
+          </div>
+        </section>
+        {/* END: Section 04 */}
+        <section className="p-4 mx-auto space-y-6 max-w-7xl sm:px-6 lg:px-8">
+          <h5 className="max-w-3xl headline-medium">Making decisions about buying, selling, and improving properties in the portfolio</h5>
+          <p className="prose">Lorem ipsum dolor sit amet consectetur adipisicing elit. Deserunt quibusdam asperiores numquam veniam accusamus modi! Mollitia quis earum, quo sunt est tenetur modi corporis ipsa quisquam magni placeat saepe obcaecati!</p>
+          <div className="grid grid-cols-1 gap-8 lg:grid-cols-3">
+            <Link href="https://www.youtube.com/watch?v=dQw4w9WgXcQ" target="_blank" className="overflow-hidden transition-all bg-white divide-y divide-gray-200 rounded-lg shadow hover:opacity-90 hover:cursor-pointer">
+              <div className="flex flex-row items-center justify-between px-4 py-5 sm:px-6">
+                <h5 className="title-medium">The Burlington Boathouse</h5>
+                <FaLink className="w-4 h-4 text-gray-500" />
+              </div>
+              <div className="relative w-full h-64">
+                <img src="https://a0.muscache.com/im/pictures/a4140371-0e56-4554-b593-4f64242d5419.jpg?im_w=960" alt="" className="" />
+              </div>
             </Link>
-            <button type="button" className="inline-flex items-center px-4 py-2 text-sm font-medium text-gray-700 bg-white border border-gray-300 rounded-md shadow-sm hover:bg-gray-50 focus:outline-none focus:ring-2 focus:ring-primary-500 focus:ring-offset-2">
-              Button text
-            </button>
-          </div>
-          {/* End of Hero Content with action */}
-          <div className="relative w-full h-[500px] my-8">
-            <Image fill quality={40} alt="people moving into their new home" src="/media/people-movingin.jpg" className="object-cover rounded-xl " />
-          </div>
-          {/* End of Image Calander */}
-        </div>
-        <div className="col-span-2">
-          <div className="flex flex-col items-start justify-between gap-16 lg:flex-row lg:items-center">
-            <div className="flex gap-2">
-              <HiOutlineCalendar className="w-6 h-6" />
-              <div className="flex flex-col">
-                <p className="text-gray-500">We’ll replace it with a new one</p>
-                <p className="font-medium text-gray-900">10-year all-inclusive warranty</p>
+            {/* End: Property Image */}
+            <Link href="https://www.youtube.com/watch?v=dQw4w9WgXcQ" target="_blank" className="overflow-hidden transition-all bg-white divide-y divide-gray-200 rounded-lg shadow hover:opacity-90 hover:cursor-pointer">
+              <div className="flex flex-row items-center justify-between px-4 py-5 sm:px-6">
+                <h5 className="title-medium">Luxury Log Cottage</h5>
+                <FaLink className="w-4 h-4 text-gray-500" />
               </div>
-            </div>
-            <div className="flex gap-2">
-              <HiOutlineCalendar className="w-6 h-6" />
-              <div className="flex flex-col">
-                <p className="text-gray-500">We’ll replace it with a new one</p>
-                <p className="font-medium text-gray-900">10-year all-inclusive warranty</p>
+              <div className="relative w-full h-64">
+                <img src="https://a0.muscache.com/im/pictures/07dd4d2c-acda-4a2c-b9a7-916e7f4f116e.jpg?im_w=960" alt="" className="" />
               </div>
-            </div>
-            <div className="flex gap-2">
-              <HiOutlineCalendar className="w-6 h-6" />
-              <div className="flex flex-col">
-                <p className="text-gray-500">We’ll replace it with a new one</p>
-                <p className="font-medium text-gray-900">10-year all-inclusive warranty</p>
+            </Link>
+            {/* End: Property Image */}
+            <Link href="https://www.youtube.com/watch?v=dQw4w9WgXcQ" target="_blank" className="overflow-hidden transition-all bg-white divide-y divide-gray-200 rounded-lg shadow hover:opacity-90 hover:cursor-pointer">
+              <div className="flex flex-row items-center justify-between px-4 py-5 sm:px-6">
+                <h5 className="title-medium">Waterfront Beach House Oasis</h5>
+                <FaLink className="w-4 h-4 text-gray-500" />
               </div>
-            </div>
+              <div className="relative w-full h-64">
+                <img src="https://a0.muscache.com/im/pictures/miso/Hosting-698118548547405462/original/714e3494-d377-40f3-a61b-97e387fba7b6.jpeg?im_w=960" alt="" className="" />
+              </div>
+            </Link>
+            {/* End: Property Image */}
           </div>
-        </div>
-        {/* End of Incentives */}
-      </section>
-    </>
-  )
-}
-function Section_2() {
-  return (
-    <>
-      <section className="border-t">
-        <div className="wrapper">
-          <h2 className="display-small max-w-[40ch] text-center pt-16 mx-auto">Invest with Confidence in Commercial & Residential Real Estate!</h2>
-          <p className="mx-auto mt-4 prose text-center">Invest in commercial and residential real estate for a steady income. Get help from an experienced real estate pro to acquire the right property, negotiate leases, and manage tenant relationships to maximize your return on investment.</p>
-          <div className="grid gap-8 mt-8 md:grid-cols-2 lg:grid-cols-3">
-            <div className="w-full transition-all bg-gray-400 h-72 hover:scale-105 hover:rotate-2 hover:cursor-pointer rounded-xl">Buying</div>
-            <div className="w-full transition-all bg-gray-400 h-72 hover:scale-105 hover:cursor-pointer rounded-xl">Selling</div>
-            <div className="w-full transition-all bg-gray-400 h-72 hover:scale-105 hover:-rotate-2 hover:cursor-pointer rounded-xl">Renting</div>
-          </div>
-        </div>
-      </section>
-    </>
-  )
-}
-function Section_3() {
-  return (
-    <>
-      <section className="border-t">
-        <div className="grid grid-cols-1 gap-8 wrapper md:grid-cols-2">
-          <div className="">
-            <h3 className="max-w-xl pt-16 display-small">Get Professional Real Estate Management Services Today!</h3>
-            <p className="mt-4 prose">Our experienced team can help identify and acquire property, negotiate leases, oversee construction, and maximize ROI. Get professional real estate management services today for a successful investment.</p>
-          </div>
-          <div className="flex flex-col justify-end mt-8 space-y-16 lg:mt-40 lg:items-end">
-            <h3 className="w-2/3 pb-4 font-normal border-b headline-medium">Service Infromation 1</h3>
-            <h3 className="w-2/3 pb-4 font-normal border-b headline-medium">Service Infromation 2</h3>
-            <h3 className="w-2/3 pb-4 font-normal border-b headline-medium">Service Infromation 3</h3>
-            <h3 className="w-2/3 pb-4 font-normal border-b headline-medium">Service Infromation 4</h3>
-          </div>
-        </div>
-      </section>
-    </>
-  )
-}
-function Section_4() {
-  return (
-    <>
-      <section className="py-24 bg-primary-600 ">
-        <div className="text-center wrapper">
-          <h4 className="display-small max-w-[40ch] text-center mx-auto text-white">Reap Maximum Returns on Your Real Estate Investments!</h4>
-          <p className="mx-auto mt-4 prose text-center text-white">It&#39;s time to take learn about real estate. Let a professional help you so you can feel like you&#39;re not getting ripped off!</p>
-        <button type="button" className="inline-flex items-center px-3 py-2 mt-6 text-sm font-medium leading-4 text-gray-700 bg-white border border-gray-300 rounded-md shadow-sm hover:bg-gray-50 focus:outline-none focus:ring-2 focus:ring-indigo-500 focus:ring-offset-2" > Button text </button>
-        </div>
-      </section>
-    </>
-  )
-}
-function Section_5() {
-  return (
-    <>
-      <section className="">
-        <div className="wrapper">
-          <h5 className="display-small max-w-[40ch] text-center mx-auto">Streamline Your Real Estate Investment Strategies with Our Services!</h5>
-          <p className="mx-auto mt-4 prose text-center">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nemo quos tempore tenetur ex voluptatem. Officia aliquid explicabo dolore voluptate, et ab porro laboriosam dolor cum sapiente exercitationem sint tempora totam!</p>
-          <div className="grid grid-cols-1 gap-8 mt-8 md:grid-cols-2 lg:grid-cols-3">
-            <div className="w-full h-40 bg-gray-500"></div>
-            <div className="w-full h-40 bg-gray-500"></div>
-            <div className="w-full h-40 bg-gray-500"></div>
-            <div className="w-full h-40 bg-gray-500"></div>
-            <div className="w-full h-40 bg-gray-500"></div>
-            <div className="w-full h-40 bg-gray-500"></div>
-          </div>
-        </div>
-      </section>
-    </>
-  )
-}
-function Section_6() {
-  return (
-    <>
-      <section className="border-t">
-        <div className="bg-white">
-          <div className="relative bg-gray-900">
+        </section>
+        {/* END: Section 05 */}
+        <section className="p-4 mx-auto max-w-7xl sm:px-6 lg:px-8">
+          <div className="relative bg-gray-900 rounded-xl">
             {/* Decorative image and overlay */}
-            <div aria-hidden="true" className="absolute inset-0 w-full h-full overflow-hidden">
-              <Image
-                fill
-                quality={40}
+            <div aria-hidden="true" className="absolute inset-0 overflow-hidden rounded-xl">
+              <img
                 src="https://tailwindui.com/img/ecommerce-images/home-page-01-hero-full-width.jpg"
                 alt=""
-                className="object-cover object-center"
+                className="object-cover object-center w-full h-full rounded-xl"
               />
             </div>
-            <div aria-hidden="true" className="absolute inset-0 bg-gray-900 opacity-50" />
-            <div className="relative flex flex-col items-center max-w-3xl px-6 py-16 mx-auto text-center sm:py-24 lg:px-0">
-              <h6 className="display-small max-w-[40ch] text-center pt-16 mx-auto text-white">Make Your Real Estate Dreams a Reality with Our Services!</h6>
-              <p className="mx-auto mt-4 prose text-center text-gray-200">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nemo quos tempore tenetur ex voluptatem. Officia aliquid explicabo dolore voluptate, et ab porro laboriosam dolor cum sapiente exercitationem sint tempora totam!</p>
+            <div aria-hidden="true" className="absolute inset-0 bg-gray-900 opacity-50 rounded-xl" />
+
+            <div className="relative flex flex-col items-center max-w-3xl px-6 py-32 mx-auto text-center sm:py-64 lg:px-0">
+              <h6 className="text-4xl font-bold tracking-tight text-white lg:text-6xl">New arrivals are here</h6>
+              <p className="mt-4 text-xl text-white">
+                The new arrivals have, well, newly arrived. Check out the latest options from our summer small-batch release
+                while they&#39;re still in stock.
+              </p>
               <a
                 href="#"
                 className="inline-block px-8 py-3 mt-8 text-base font-medium text-gray-900 bg-white border border-transparent rounded-md hover:bg-gray-100"
@@ -170,8 +156,9 @@ function Section_6() {
               </a>
             </div>
           </div>
-        </div>
-      </section>
+        </section>
+        {/* END: Section 06 */}
+      </main>
     </>
   )
 }
