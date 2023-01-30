@@ -17,12 +17,12 @@ export default function index() {
             <div className="lg:p-4">
               <p className="prose lg:mx-auto">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Sunt laudantium at sit voluptatibus quisquam saepe illum commodi, adipisci dolore autem ratione dolorum amet quis distinctio dolor fugit ipsam nostrum officiis!</p>
               <div className="flex flex-col justify-start gap-4 mt-8 md:flex-row md:justify-center">
-                <button type="button" className="inline-flex items-center px-4 py-2 text-sm font-medium text-white border border-transparent rounded-md shadow-sm bg-primary-600 hover:bg-primary-700 focus:outline-none focus:ring-2 focus:ring-primary-500 focus:ring-offset-2" > Get Started Today </button>
-                <button type="button" className="inline-flex items-center px-4 py-2 text-sm font-medium text-gray-700 bg-white border border-gray-300 rounded-md shadow-sm hover:bg-gray-50 focus:outline-none focus:ring-2 focus:ring-primary-500 focus:ring-offset-2" >Learn More About Us</button>
+                <Link href="/contact" className="inline-flex items-center px-4 py-2 text-sm font-medium text-white border border-transparent rounded-md shadow-sm bg-primary-600 hover:bg-primary-700 focus:outline-none focus:ring-2 focus:ring-primary-500 focus:ring-offset-2" >Get Started Today</Link>
+                <Link href="/buildings" className="inline-flex items-center px-4 py-2 text-sm font-medium text-gray-700 bg-white border border-gray-300 rounded-md shadow-sm hover:bg-gray-50 focus:outline-none focus:ring-2 focus:ring-primary-500 focus:ring-offset-2" >View Properties</Link>
               </div>
               {/* END Section 01: Secondary Info */}
-              <div className="relative w-full h-[480px] lg:h-[640px] mt-8 rounded-xl">
-                <Image fill quality={40} src="/media/hero-img.webp" alt="" className="object-cover w-full h-full rounded-xl" />
+              <div className="relative w-full h-[480px] lg:h-[640px] mt-8 rounded-xl bg-white">
+                {/* Hero Image Goes Here  */}
               </div>
             </div>
           </div>
@@ -85,10 +85,18 @@ export default function index() {
               <h4 className="max-w-3xl font-bold headline-medium">Why Choose Us & Profit from Real Estate: Develop & Manage Holdings</h4>
             </div>
             <div className="grid w-full grid-cols-1 gap-8 md:grid-cols-2">
-              <div className="w-full h-48 border rounded-xl">1</div>
-              <div className="w-full h-48 border rounded-xl">1</div>
-              <div className="w-full h-48 border rounded-xl">1</div>
-              <div className="w-full h-48 border rounded-xl">1</div>
+              <div className="w-full h-48 border rounded-xl">
+                <h4 className="title-medium">What Makes Us Different?</h4>
+              </div>
+              <div className="w-full h-48 border rounded-xl">
+                <h4 className="title-medium">What Makes Us Different?</h4>
+              </div>
+              <div className="w-full h-48 border rounded-xl">
+                <h4 className="title-medium">What Makes Us Different?</h4>
+              </div>
+              <div className="w-full h-48 border rounded-xl">
+                <h4 className="title-medium">What Makes Us Different?</h4>
+              </div>
             </div>
           </div>
         </section>
@@ -103,7 +111,7 @@ export default function index() {
                 <FaLink className="w-4 h-4 text-gray-500" />
               </div>
               <div className="relative w-full h-64">
-                <img src="https://a0.muscache.com/im/pictures/a4140371-0e56-4554-b593-4f64242d5419.jpg?im_w=960" alt="" className="" />
+                <Image fill quality={40} src="https://a0.muscache.com/im/pictures/a4140371-0e56-4554-b593-4f64242d5419.jpg?im_w=960" alt="" className="w-full h-full" />
               </div>
             </Link>
             {/* End: Property Image */}
@@ -113,7 +121,7 @@ export default function index() {
                 <FaLink className="w-4 h-4 text-gray-500" />
               </div>
               <div className="relative w-full h-64">
-                <img src="https://a0.muscache.com/im/pictures/07dd4d2c-acda-4a2c-b9a7-916e7f4f116e.jpg?im_w=960" alt="" className="" />
+                <Image fill quality={40} src="https://a0.muscache.com/im/pictures/07dd4d2c-acda-4a2c-b9a7-916e7f4f116e.jpg?im_w=960" alt="" className="" />
               </div>
             </Link>
             {/* End: Property Image */}
@@ -123,7 +131,7 @@ export default function index() {
                 <FaLink className="w-4 h-4 text-gray-500" />
               </div>
               <div className="relative w-full h-64">
-                <img src="https://a0.muscache.com/im/pictures/miso/Hosting-698118548547405462/original/714e3494-d377-40f3-a61b-97e387fba7b6.jpeg?im_w=960" alt="" className="" />
+                <Image fill quality={40} src="https://a0.muscache.com/im/pictures/miso/Hosting-698118548547405462/original/714e3494-d377-40f3-a61b-97e387fba7b6.jpeg?im_w=960" alt="" className="" />
               </div>
             </Link>
             {/* End: Property Image */}
@@ -134,7 +142,7 @@ export default function index() {
           <div className="relative bg-gray-900 rounded-xl">
             {/* Decorative image and overlay */}
             <div aria-hidden="true" className="absolute inset-0 overflow-hidden rounded-xl">
-              <img
+              <Image fill quality={40}
                 src="https://tailwindui.com/img/ecommerce-images/home-page-01-hero-full-width.jpg"
                 alt=""
                 className="object-cover object-center w-full h-full rounded-xl"
@@ -148,12 +156,12 @@ export default function index() {
                 The new arrivals have, well, newly arrived. Check out the latest options from our summer small-batch release
                 while they&#39;re still in stock.
               </p>
-              <a
-                href="#"
+              <Link
+                href="/#"
                 className="inline-block px-8 py-3 mt-8 text-base font-medium text-gray-900 bg-white border border-transparent rounded-md hover:bg-gray-100"
               >
                 Shop New Arrivals
-              </a>
+              </Link>
             </div>
           </div>
         </section>
