@@ -1,5 +1,5 @@
 const product = {
-  name: 'Unique waterfront property on Lake Ontario',
+  name: 'Unique waterfront property',
   images: [
     {
       id: 1,
@@ -84,7 +84,7 @@ const pages = [
   { name: 'Unique Waterfront Property On Lake Ontario', href: '/buildings/slug', current: true },
 ]
 const properties = [
-  {id: 1, title: "Unique waterfront property on Lake Ontario", link: "/slug", image: "https://a0.muscache.com/im/pictures/a738eec4-43e3-4b57-91fc-ebb49ab383e1.jpg?im_w=1200"},
+  {id: 1, title: "Unique waterfront property", link: "/slug", image: "https://a0.muscache.com/im/pictures/a738eec4-43e3-4b57-91fc-ebb49ab383e1.jpg?im_w=1200"},
   {id: 2, title: "Sunset Point", link: "/slug", image: "/media/properties/pexels-jonathan-borba-3217505.jpg"},
   {id: 3, title: "Sunset Point", link: "/slug", image: "/media/properties/pexels-muffin-creatives-2468773.jpg"},
   {id: 4, title: "Sunset Point", link: "/slug", image: "/media/properties/pexels-taras-makarenko-593171.jpg"}
