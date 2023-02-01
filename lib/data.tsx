@@ -1,38 +1,38 @@
 const product = {
-  name: 'Unique waterfront property',
+  name: "Unique waterfront property",
   images: [
     {
       id: 1,
-      name: 'Angled view',
-      src: 'https://a0.muscache.com/im/pictures/a738eec4-43e3-4b57-91fc-ebb49ab383e1.jpg?im_w=1200',
-      alt: 'Angled front view with bag zipped and handles upright.',
+      name: "Angled view",
+      src: "https://a0.muscache.com/im/pictures/a738eec4-43e3-4b57-91fc-ebb49ab383e1.jpg?im_w=1200",
+      alt: "Angled front view with bag zipped and handles upright.",
     },
     // More images...
     {
       id: 1,
-      name: 'Angled view',
-      src: 'https://a0.muscache.com/im/pictures/83701108-983f-4600-9844-3e36e76ffbaf.jpg?im_w=720',
-      alt: 'Angled front view with bag zipped and handles upright.',
+      name: "Angled view",
+      src: "https://a0.muscache.com/im/pictures/83701108-983f-4600-9844-3e36e76ffbaf.jpg?im_w=720",
+      alt: "Angled front view with bag zipped and handles upright.",
     },
     // More images...
     {
       id: 1,
-      name: 'Angled view',
-      src: 'https://a0.muscache.com/im/pictures/ce9ec53d-3225-4c4c-b979-7821b77f22dd.jpg?im_w=720',
-      alt: 'Angled front view with bag zipped and handles upright.',
+      name: "Angled view",
+      src: "https://a0.muscache.com/im/pictures/ce9ec53d-3225-4c4c-b979-7821b77f22dd.jpg?im_w=720",
+      alt: "Angled front view with bag zipped and handles upright.",
     },
     // More images...
     {
       id: 1,
-      name: 'Angled view',
-      src: 'https://a0.muscache.com/im/pictures/786b83af-6e30-4528-8a45-98b4f1fca791.jpg?im_w=1200',
-      alt: 'Angled front view with bag zipped and handles upright.',
+      name: "Angled view",
+      src: "https://a0.muscache.com/im/pictures/786b83af-6e30-4528-8a45-98b4f1fca791.jpg?im_w=1200",
+      alt: "Angled front view with bag zipped and handles upright.",
     },
     {
       id: 1,
-      name: 'Angled view',
-      src: 'https://a0.muscache.com/im/pictures/786b83af-6e30-4528-8a45-98b4f1fca791.jpg?im_w=1200',
-      alt: 'Angled front view with bag zipped and handles upright.',
+      name: "Angled view",
+      src: "https://a0.muscache.com/im/pictures/786b83af-6e30-4528-8a45-98b4f1fca791.jpg?im_w=1200",
+      alt: "Angled front view with bag zipped and handles upright.",
     },
     // More images...
   ],
@@ -41,20 +41,20 @@ const product = {
   `,
   details: [
     {
-      name: 'Features',
+      name: "Features",
       items: [
-        'Multiple strap configurations',
-        'Spacious interior with top zip',
-        'Leather handle and tabs',
-        'Interior dividers',
-        'Stainless strap loops',
-        'Double stitched construction',
-        'Water-resistant',
+        "Multiple strap configurations",
+        "Spacious interior with top zip",
+        "Leather handle and tabs",
+        "Interior dividers",
+        "Stainless strap loops",
+        "Double stitched construction",
+        "Water-resistant",
       ],
     },
     // More sections...
   ],
-}
+};
 const incentives = [
   {
     name: "Information driven",
@@ -80,15 +80,60 @@ const incentives = [
 ];
 
 const pages = [
-  { name: 'buildings', href: '/buildings', current: false },
-  { name: 'Unique Waterfront Property On Lake Ontario', href: '/buildings/slug', current: true },
-]
+  { name: "buildings", href: "/buildings", current: false },
+  {
+    name: "Unique Waterfront Property On Lake Ontario",
+    href: "/buildings/slug",
+    current: true,
+  },
+];
 const properties = [
-  {id: 1, title: "Unique waterfront property", link: "/slug", image: "https://a0.muscache.com/im/pictures/a738eec4-43e3-4b57-91fc-ebb49ab383e1.jpg?im_w=1200"},
-  {id: 2, title: "Sunset Point", link: "/slug", image: "/media/properties/pexels-jonathan-borba-3217505.jpg"},
-  {id: 3, title: "Sunset Point", link: "/slug", image: "/media/properties/pexels-muffin-creatives-2468773.jpg"},
-  {id: 4, title: "Sunset Point", link: "/slug", image: "/media/properties/pexels-taras-makarenko-593171.jpg"}
-]
+  {
+    id: 1,
+    title: "Unique waterfront property",
+    link: "/slug",
+    status: 'Buying',
+    image:
+      "https://a0.muscache.com/im/pictures/a738eec4-43e3-4b57-91fc-ebb49ab383e1.jpg?im_w=1200",
+  },
+  {
+    id: 2,
+    title: "Unique waterfront property",
+    link: "/slug",
+    status: 'Buying',
+    image:
+      "https://a0.muscache.com/im/pictures/a738eec4-43e3-4b57-91fc-ebb49ab383e1.jpg?im_w=1200",
+  },
+  {
+    id: 3,
+    title: "Unique waterfront property",
+    link: "/slug",
+    status: 'Buying',
+    image:
+      "https://a0.muscache.com/im/pictures/a738eec4-43e3-4b57-91fc-ebb49ab383e1.jpg?im_w=1200",
+  },
+  {
+    id: 2,
+    title: "Sunset Point",
+    link: "/slug",
+    status: 'Selling',
+    image: "/media/properties/pexels-jonathan-borba-3217505.jpg",
+  },
+  {
+    id: 3,
+    title: "Sunset Point",
+    link: "/slug",
+    status: 'Renting',
+    image: "/media/properties/pexels-muffin-creatives-2468773.jpg",
+  },
+  {
+    id: 4,
+    title: "Sunset Point",
+    link: "/slug",
+    status: 'Renting',
+    image: "/media/properties/pexels-taras-makarenko-593171.jpg",
+  },
+];
 let secondary_features = [
   {
     id: 1,
@@ -138,17 +183,17 @@ let secondary_features = [
 ];
 const footer_navigation = {
   main: [
-    { name: 'About', href: '#' },
-    { name: 'Blog', href: '#' },
-    { name: 'Jobs', href: '#' },
-    { name: 'Press', href: '#' },
-    { name: 'Accessibility', href: '#' },
-    { name: 'Partners', href: '#' },
+    { name: "About", href: "#" },
+    { name: "Blog", href: "#" },
+    { name: "Jobs", href: "#" },
+    { name: "Press", href: "#" },
+    { name: "Accessibility", href: "#" },
+    { name: "Partners", href: "#" },
   ],
   social: [
     {
-      name: 'Facebook',
-      href: '#',
+      name: "Facebook",
+      href: "#",
       icon: (props: any) => (
         <svg fill="currentColor" viewBox="0 0 24 24" {...props}>
           <path
@@ -160,8 +205,8 @@ const footer_navigation = {
       ),
     },
     {
-      name: 'Instagram',
-      href: '#',
+      name: "Instagram",
+      href: "#",
       icon: (props: any) => (
         <svg fill="currentColor" viewBox="0 0 24 24" {...props}>
           <path
@@ -173,8 +218,8 @@ const footer_navigation = {
       ),
     },
     {
-      name: 'Twitter',
-      href: '#',
+      name: "Twitter",
+      href: "#",
       icon: (props: any) => (
         <svg fill="currentColor" viewBox="0 0 24 24" {...props}>
           <path d="M8.29 20.251c7.547 0 11.675-6.253 11.675-11.675 0-.178 0-.355-.012-.53A8.348 8.348 0 0022 5.92a8.19 8.19 0 01-2.357.646 4.118 4.118 0 001.804-2.27 8.224 8.224 0 01-2.605.996 4.107 4.107 0 00-6.993 3.743 11.65 11.65 0 01-8.457-4.287 4.106 4.106 0 001.27 5.477A4.072 4.072 0 012.8 9.713v.052a4.105 4.105 0 003.292 4.022 4.095 4.095 0 01-1.853.07 4.108 4.108 0 003.834 2.85A8.233 8.233 0 012 18.407a11.616 11.616 0 006.29 1.84" />
@@ -182,8 +227,8 @@ const footer_navigation = {
       ),
     },
     {
-      name: 'GitHub',
-      href: '#',
+      name: "GitHub",
+      href: "#",
       icon: (props: any) => (
         <svg fill="currentColor" viewBox="0 0 24 24" {...props}>
           <path
@@ -195,8 +240,8 @@ const footer_navigation = {
       ),
     },
     {
-      name: 'YouTube',
-      href: '#',
+      name: "YouTube",
+      href: "#",
       icon: (props: any) => (
         <svg fill="currentColor" viewBox="0 0 24 24" {...props}>
           <path
@@ -208,5 +253,12 @@ const footer_navigation = {
       ),
     },
   ],
-}
-export  {product, properties, pages ,incentives, secondary_features, footer_navigation}
+};
+export {
+  product,
+  properties,
+  pages,
+  incentives,
+  secondary_features,
+  footer_navigation,
+};
