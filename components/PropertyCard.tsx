@@ -6,24 +6,25 @@ interface PropertyCardProps {
   Meida: string;
   Headline: string;
   Path: string;
+  Status: String;
 }
 export default function PropertyCard(props: PropertyCardProps) {
   return (
-    <Link
-      href={`/buildings/${props.Path}`}
-      className="overflow-hidden transition-all bg-white divide-y divide-gray-200 rounded-lg shadow hover:opacity-90 hover:cursor-pointer"
-    >
-      <div className="flex flex-row items-center justify-between px-4 py-5 sm:px-6">
-        <h5 className="title-medium">{props.Headline}</h5>
-        <FaLink className="w-4 h-4 text-gray-500" />
-      </div>
-      <div className="relative w-full h-64">
-        <Image
-          fill
-          src={props.Meida}
-          alt={`Image of ${props.Headline}`}
-          className="object-cover"
-        />
+    <Link href={`/buildings/${props.Path}`}>
+      <div className="overflow-hidden bg-white divide-y divide-gray-200 rounded-lg shadow">
+        <div className="px-4 py-5 sm:px-6">
+          {/* Content goes here */}
+          {props.Headline}
+          {/* We use less vertical padding on card headers on desktop than on body sections */}
+        </div>
+        <div className="relative w-full h-64 px-4 py-5 sm:p-6">
+          <Image fill quality={20} src={props.Meida} alt="" className="object-cover w-full h-full" loading="lazy" />
+        </div>
+        <div className="px-4 py-4 sm:px-6">
+          {/* Content goes here */}
+          {props.Status}
+          {/* We use less vertical padding on card footers at all sizes than on headers or body sections */}
+        </div>
       </div>
     </Link>
   );
