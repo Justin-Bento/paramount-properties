@@ -15,7 +15,7 @@ const navigation = [
 
 export default function Apbbar() {
   return (
-    <div className="flex flex-col min-h-full">
+    <div className="flex flex-col min-h-full animate-fadein">
       <Popover className="relative bg-gray-50">
         <div className="px-6 mx-auto max-w-7xl lg:px-8">
           <div className="flex items-center justify-between py-6 border-b-2 border-gray-100 md:justify-start md:space-x-10">

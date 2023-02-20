@@ -12,7 +12,7 @@ export default function Home() {
       </Head>
       <Apbbar />
       <main className="">
-        <section className="relative px-6 py-32 bg-gray-800 sm:py-40 sm:px-12 lg:px-16">
+        <section className="relative px-6 py-32 bg-gray-800 sm:py-40 sm:px-12 lg:px-16 animate-fadein">
           <div className="absolute inset-0 z-10 overflow-hidden">
             <Image src="/media/hero-pexels-alex-staudinger-1732414.jpg" fill quality={40} alt="" />
           </div>
