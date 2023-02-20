@@ -3,6 +3,7 @@ import Image from "next/image";
 import Apbbar from "../components/Apbbar";
 import Footer from "../components/Footer"
 import Feature_Card_Component from "../components/Feature_Card_Component"
+import Link from "next/link";
 
 export default function Home() {
   return (
@@ -20,7 +21,7 @@ export default function Home() {
           <div className="relative z-20 p-4 pmx-auto max-w-7xl sm:px-6 lg:px-8 text-start">
             <h1 className="text-4xl leading-normal lg:text-5xl lg:leading-[3.8rem] capitalize text-white lg:max-w-4xl mb-4" >Creating spaces that are comfortable, memorable and inspiring.</h1>
             <p className="mb-6 text-lg leading-normal tracking-wide text-white lg:text-xl lg:max-w-3xl">In some places, it’s the only place we can find a permanent improvement. There’s no way around it, this is the land. The only way to find it is to do research and ask.</p>
-            <button className="items-center px-4 py-2 text-sm font-medium text-white bg-indigo-600 border border-transparent rounded-md shadow-sm inline-flPex hover:bg-indigo-700 focus:outline-none focus:ring-2 focus:ring-indigo-500 focus:ring-offset-2">Contact Us</button>
+            <Link href="/contact" className="items-center px-4 py-2 text-sm font-medium text-white bg-indigo-600 border border-transparent rounded-md shadow-sm inline-flPex hover:bg-indigo-700 focus:outline-none focus:ring-2 focus:ring-indigo-500 focus:ring-offset-2">Contact Us</Link>
           </div>
         </section>
         <section className="p-4 mx-auto my-16 max-w-7xl sm:px-6 lg:px-8 md:p-0 lg:my-40">
