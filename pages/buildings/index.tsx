@@ -26,7 +26,7 @@ export default function index() {
               <Tab>Renting</Tab>
             </Tab.List>
           </div>
-          <Tab.Panels as="section">
+          <Tab.Panels as="section"  className="h-screen overflow-y-auto">
             <Tab.Panel className="flex flex-col gap-2">
               {properties.filter(person => person.status == "Buying").map(filteredPerson => (
                 <PropertyCard key={filteredPerson.id} Headline={filteredPerson.title} Meida={filteredPerson.image} Path={filteredPerson.title.toString().toLowerCase().replace(/\s+/g, '-')} Status="Buying" />
