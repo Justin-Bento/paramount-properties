@@ -11,19 +11,13 @@ interface PropertyCardProps {
 export default function PropertyCard(props: PropertyCardProps) {
   return (
     <Link href={`/buildings/${props.Path}`}>
-      <div className="overflow-hidden bg-white divide-y divide-gray-200 rounded-lg shadow">
-        <div className="px-4 py-5 sm:px-6">
-          {/* Content goes here */}
-          {props.Headline}
-          {/* We use less vertical padding on card headers on desktop than on body sections */}
+      <div className="relative w-full bg-gray-400 h-72">
+        <div className="absolute inset-0 z-10 overflow-hidden">
+          <Image src={props.Meida} fill quality={40} alt="" className="object-cover object-center" />
         </div>
-        <div className="relative w-full h-64 px-4 py-5 sm:p-6">
-          <Image fill quality={20} src={props.Meida} alt="" className="object-cover w-full h-full" loading="lazy" />
-        </div>
-        <div className="px-4 py-4 sm:px-6">
-          {/* Content goes here */}
-          {props.Status}
-          {/* We use less vertical padding on card footers at all sizes than on headers or body sections */}
+        <div aria-hidden="true" className="absolute inset-0 z-20 bg-gray-900 bg-opacity-50" />
+        <div className="absolute z-20 bottom-5 left-5">
+          <p className="text-xl text-white">{props.Headline}</p>
         </div>
       </div>
     </Link>
