@@ -1,5 +1,7 @@
 import Head from 'next/head'
 import { HiPhone, HiMail } from 'react-icons/hi'
+import Apbbar from '../../components/Apbbar'
+import Footer from '../../components/Footer'
 
 export default function Contact() {
   return (
@@ -7,6 +9,7 @@ export default function Contact() {
       <Head>
         <title>Paramount Propertiies - Contact</title>
       </Head>
+      <Apbbar/>
       <div className="relative bg-white">
         <div className="absolute inset-0">
           <div className="absolute inset-y-0 left-0 w-1/2 bg-gray-50" />
@@ -112,6 +115,7 @@ export default function Contact() {
           </div>
         </div>
       </div>
+      <Footer/>
     </>
   )
 }
