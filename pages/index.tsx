@@ -21,7 +21,7 @@ export default function Home() {
           <div className="relative z-20 p-4 pmx-auto max-w-7xl sm:px-6 lg:px-8 text-start">
             <h1 className="text-4xl leading-normal lg:text-5xl lg:leading-[3.8rem] capitalize text-white lg:max-w-4xl mb-4" >Creating spaces that are comfortable, memorable and inspiring.</h1>
             <p className="mb-6 text-lg leading-normal tracking-wide text-white lg:text-xl lg:max-w-3xl">In some places, it’s the only place we can find a permanent improvement. There’s no way around it, this is the land. The only way to find it is to do research and ask.</p>
-            <Link href="/contact" className="items-center px-4 py-2 text-sm font-medium text-white bg-indigo-600 border border-transparent rounded-md shadow-sm inline-flPex hover:bg-indigo-700 focus:outline-none focus:ring-2 focus:ring-indigo-500 focus:ring-offset-2">Contact Us</Link>
+            <Link href="/contact" className="items-center px-4 py-2 text-sm font-medium text-white border border-transparent rounded-md shadow-sm bg-sky-600 inline-flPex hover:bg-sky-700 focus:outline-none focus:ring-2 focus:ring-sky-500 focus:ring-offset-2">Contact Us</Link>
           </div>
         </section>
         <section className="p-4 mx-auto my-16 max-w-7xl sm:px-6 lg:px-8 md:p-0 lg:my-40">
@@ -56,7 +56,7 @@ export default function Home() {
           <div className="mx-auto max-w-7xl sm:px-6 lg:px-8 text-start lg:text-center">
             <h3 className="mb-2 text-2xl font-bold text-white">Get  Familiar & View Our Properties</h3>
             <p className="max-w-xl mb-6 text-white textx-md lg:mx-auto">Whether it is a simple, yet elegant home with a sleek modern design, or an elegant design with a nod to both.</p>
-            <button className="items-center px-4 py-2 text-sm font-medium bg-[#BAEAFF] text-[#006781] border border-transparent rounded-md shadow-sm inline-flPex hover:bg-indigo-700 focus:outline-none focus:ring-2 focus:ring-indigo-500 focus:ring-offset-2">Contact Us</button>
+            <button className="items-center px-4 py-2 text-sm font-medium bg-[#BAEAFF] text-[#006781] border border-transparent rounded-md shadow-sm inline-flPex hover:bg-sky-700 focus:outline-none focus:ring-2 focus:ring-sky-500 focus:ring-offset-2">Contact Us</button>
           </div>
         </section>
         <section className="p-16 bg-gray-100 lg:py-40">
@@ -85,7 +85,7 @@ export default function Home() {
               <p className="max-w-xl mt-2 text-sky-50">Whether it is a simple, yet elegant home with a sleek modern design, or an elegant design with a nod to both.</p>
             </div>
             <div className="">
-              <button className="inline-flex items-center px-4 py-2 text-sm font-medium bg-[#BAEAFF] text-[#006781] border border-transparent rounded-md shadow-sm inline-flPex hover:bg-indigo-700 focus:outline-none focus:ring-2 focus:ring-indigo-500 focus:ring-offset-2">Contact Us</button>
+              <button className="inline-flex items-center px-4 py-2 text-sm font-medium bg-[#BAEAFF] text-[#006781] border border-transparent rounded-md shadow-sm inline-flPex hover:bg-sky-700 focus:outline-none focus:ring-2 focus:ring-sky-500 focus:ring-offset-2">Contact Us</button>
             </div>
           </div>
         </section>
