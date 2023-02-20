@@ -2,6 +2,8 @@ import { Disclosure, Tab } from '@headlessui/react'
 import Head from 'next/head'
 import Image from 'next/image'
 import { HiMinus, HiPlus } from 'react-icons/hi'
+import Apbbar from '../../components/Apbbar'
+import Footer from '../../components/Footer'
 import Breadcrumbs from '../../components/Breadcrumbs'
 import { product, pages } from "../../lib/data"
 
@@ -12,6 +14,7 @@ function classNames(...classes: any) {
 export default function Example() {
   return (
     <>
+    <Apbbar />
       <Head>
         <title>Buildings Slug - Paramount Properties</title>
       </Head>
@@ -30,6 +33,7 @@ export default function Example() {
         <Production_Info />
         {/* Product info */}
       </main>
+    <Footer />
     </>
   )
 }
